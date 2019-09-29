@@ -1,2 +1,3 @@
 # runescape-account-creator
-Creates an account for runescape
+
+Chrome extension that creates an account for runescape
