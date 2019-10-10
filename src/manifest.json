@@ -1,15 +1,12 @@
 {
   "manifest_version": 2,
-
   "name": "Osrs Account Creator",
   "description": "Creates Runescape accounts",
   "version": "1.0",
-
   "background": {
     "persistent": false,
-    "scripts": ["build/background.js"]
+    "scripts": ["background.js", "ui.js"]
   },
-
   "browser_action": {
     "default_icon": "icon.png"
   },

@@ -16,7 +16,10 @@ const sendAccountCreatedRequest = (email, password) =>
   );
 
 let sentRequest = false;
+
 chrome.browserAction.onClicked.addListener(function(tab) {
+  chrome.tabs.create({ url: chrome.runtime.getURL("index.html") });
+
   const email = faker.internet.email().toLowerCase();
   const password = faker.internet.password().toLowerCase();
   sentRequest = false;
